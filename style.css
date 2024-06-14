@@ -25,22 +25,7 @@ body {
   justify-content: center;
   font-family: ProximaNova;
 }
- /*
-.seccion {
-  scroll-snap-align: start; 
-  
-}
-.seccion:not(:first-of-type) {
-  scroll-snap-type: mandatory; 
-}
 
-.activo {
-  -webkit-animation: fade-l 4s ease-in 0s 1 normal forwards;
-  animation: fade-l 4s ease-in 0s 1 normal forwards;
-
-}
-
-*/
 .container__nav {
   font-size: var(--tamaletter);
   margin-top: 2%;
@@ -80,7 +65,6 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 10em;
 }
 
@@ -625,3 +609,45 @@ body {
   margin-top: 12px;
 }
 
+@media only screen and (max-width: 850px) {
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #886026;
+}
+
+.container__Worker{
+  -o-border-radius: 10px;
+  text-align: center;
+  background-color: #886026;
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+  .container__myPetApp{
+  display: none;
+}
+
+.cont__img__movil img{
+  width: 20%;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 850px) {
+
+
+  .container__Worker{
+    display: none;
+  }
+  
+  }
